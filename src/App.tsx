@@ -71,15 +71,17 @@ export default function App() {
             </div>
             
             <div className="flex-1 pt-4">
-              <h1 className="mb-4">Юлія Сторожевська</h1>
+              <h1 className="mb-4">ЮЛІЯ СТОРОЖЕВСЬКА</h1>
               <div className="space-y-4 text-foreground/80">
                 <p>
-                  Сертифікований гештальт-терапевт, супервізор, тренер інституту MIGIS (акредитований в EAGT), 
-                  тілесно-орієнтований, системно-сімейний терапевт, спеціаліст по роботі із залежностями, 
-                  арт-терапії, дитяче-батьківських відносин.
+                  Дипломований Психолог, Сертифікований гештальт-терапевт, Сертифікований супервізор, рекомендований тренер інституту MIGIS (акредитований в EAGT), тілесно-орієнтований, системно-сімейний терапевт, спеціаліст по роботі із залежностями, арт-терапії, дитяче-батьківських відносин.
                 </p>
                 <p className="text-muted-foreground italic">
                   Щедра, тепла, безпечна, професійна, глибока, щира, жива
+                </p>
+
+                  <p>
+                  12+ років досвіду у терапії
                 </p>
               </div>
             </div>
@@ -182,7 +184,7 @@ export default function App() {
             <div className="p-6 rounded-lg border border-border bg-card">
               <div className="mb-2">
                 <h3 className="mb-2">Індивідуальна терапія (жінки, чоловіки)</h3>
-                <p className="text-muted-foreground">2500 грн Україна, інші країни 60€</p>
+                <p className="text-muted-foreground">70 євро сесія</p>
               </div>
               <div className="space-y-2 text-foreground/70 mb-4">
                 <p>Перша сесія: 60 хвилин, наступні по 50 хвилин</p>
@@ -206,14 +208,13 @@ export default function App() {
             <div className="p-6 rounded-lg border border-border bg-card">
               <div className="mb-2">
                 <h3 className="mb-2">Сімейна консультація</h3>
-                <p className="text-muted-foreground">3750 грн Україна, інші країни 100€</p>
+                <p className="text-muted-foreground">5500 грн</p>
               </div>
               <div className="space-y-2 text-foreground/70 mb-4">
-                <p>100 хвилин, раз на 2-3 тижні залежно від запиту</p>
+                <p>100-120 хвилин, раз на 2-3 тижні залежно від запиту</p>
                 <p className="text-sm text-muted-foreground">
                   Домашні завдання, підтримка по Viber, коригування та супровід. 
-                  Окремо кожного не беру, але якщо сім'я перестає ходити в терапію, одного з супругів можу взяти в індивідуальну
-                </p>
+Окремо кожного в парі не беру, але якщо сім'я перестає ходити в терапію, одного з супругів можу взяти в індивідуальну терапію                </p>
               </div>
               <a 
                 href="https://t.me/yuliyastor" 
@@ -264,6 +265,7 @@ export default function App() {
         <section className="mb-20">
           <div className="p-8 rounded-lg border border-border bg-card">
             <h2 className="mb-6">Розстановки</h2>
+            <p className="text-muted-foreground"> 350 євро до 2х годин</p>
             <div className="space-y-4 text-foreground/80 mb-6">
               <p>
                 Я роблю три види розстановок, які підбираю сама під ваш запит:
@@ -397,12 +399,138 @@ export default function App() {
           </div>
         </section>
 
+
+{/* -------------------- Блок 1: Таблиця -------------------- */}
+<section className="mb-20 flex justify-center">
+  <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
+{/* <h2 className="mb-6 text-center text-2xl font-semibold text-foreground">
+  З якими запитами я працюю
+</h2> */}
+
+ <h2
+      className="mb-6 text-center font-bold"
+      style={{ color: "#111827", fontSize: "1.75rem" }}
+    >
+      З якими запитами я працюю
+    </h2>
+
+    <table className="w-full border-collapse text-left">
+      <tbody className="divide-y divide-border/60">
+        {[
+          ["Емоційний стан","Тривожність, депресивні стани, внутрішня порожнеча, втрата енергії"],
+          ["Психосоматика","Психосоматичні симптоми, тілесна напруга, зв'язок емоцій і тіла"],
+          ["Травматичний досвід","Травми, насилля, кПТСР, складне дитинство"],
+          ["Панічні та тривожні розлади","Панічні атаки, страхи, фобії"],
+          ["Самооцінка і внутрішня сила","Прийняття власної сили, здорової агресії, кордонів"],
+          ["Стосунки","Партнерські конфлікти, залежні стосунки, вихід із токсичних стосунків"],
+          ["Самостійність у стосунках","Як бути близькою і залишатися собою"],
+          ["Дитячо-батьківські теми","Старі сценарії, вплив батьківської родини"],
+          ["Самотність","Відчуття покинутості, ізоляції, труднощі близькості"],
+          ["Сором і провина","Токсична провина, самосаботаж, самопошкодження"],
+          ["Харчова поведінка","Переїдання, емоційне харчування (без роботи з анорексією/булімією)"],
+          ["Сексуальність","Прийняття своєї сексуальності, важливості, права на бажання"],
+          ["Життєві кризи","Розлучення, втрати, зміни в родині"],
+          ["Нові сценарії життя","Побудова інших, здоровіших стосунків"],
+          ["Робота зі страхами","Сміливість при збереженні гнучкості"],
+          ["Тіло і психіка","Відчуття тіла, поєднання розуму і тілесності"],
+          ["Репродуктивні теми","Бажання завагітніти, емоційні блоки"],
+          ["Робота зі снами","Сни як доступ до глибинних процесів"],
+        ].map(([title, text], i) => (
+          <tr key={i}>
+            <td className="py-3 pr-6 font-medium text-foreground align-top">
+              <div className="flex items-start gap-2">
+                <span className="text-primary mt-1">✓</span>
+                <span>{title}</span>
+              </div>
+            </td>
+
+            <td className="py-3 text-foreground/80 leading-loose">
+              {text}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+{/* -------------------- Блок 2: Моя терапія -------------------- */}
+<section className="mb-20 flex justify-center">
+  <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
+ {/* <h2
+  className="mb-6 font-semibold text-left"
+  style={{ fontSize: "1.6rem", color: "#111827" }}
+>
+  Моя терапія для тих, хто…
+</h2> */}
+
+ <h2
+      className="mb-6 text-center font-bold"
+      style={{ color: "#111827", fontSize: "1.75rem" }}
+    >
+      Моя терапія для тих, хто…
+    </h2>
+
+    <ul className="space-y-4 list-disc pl-6">
+      {[
+        "шукає глибину, а не лише швидкі поради",
+        "хоче розвитку, а не просто полегшення симптомів",
+        "прагне краще зрозуміти себе",
+        "хоче відчути свою силу й опору",
+        "шукає внутрішнє світло і живість",
+        "хоче будувати зрілі стосунки",
+        "втомився повторювати старі сценарії",
+        "хоче поєднати духовність, психіку і тіло",
+        "готовий до чесного контакту із собою",
+      ].map((item, i) => (
+        <li key={i} className="leading-loose">{item}</li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+{/* -------------------- Блок 3: Чому я -------------------- */}
+<section className="mb-20 flex justify-center">
+  <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
+    <h2
+      className="mb-6 text-center font-bold"
+      style={{ color: "#111827", fontSize: "1.75rem" }}
+    >
+      Чому я
+    </h2>
+
+    <div className="space-y-4 text-foreground/90 leading-loose">
+      {[
+        "Я постійно навчаюся й розвиваюся як психотерапевт, щоб у роботі спиратися на сучасні знання, професійні методи й глибоке розуміння психіки людини.",
+        "У терапії зі мною є повага до темпу, кордонів і готовності людини. Я уважно відчуваю, що зараз справді потрібно клієнту, і допомагаю рухатися так, щоб зміни були природними та стійкими.",
+        "Моя робота — про глибину, чутливість і професійну опору. Я супроводжую людину в процесі, поки формується внутрішня сила, ясність і здатність спиратися на себе у житті та стосунках.",
+        "Мені важливо, щоб після терапії люди ставали більш самостійними, вільними у виборі та впевненими у власних рішеннях.",
+        "Часто люди приходять за рекомендаціями тих, хто вже пройшов цей шлях і відчув зміни у своєму житті."
+      ].map((text, i) => (
+        <p key={i} className="flex items-start gap-2">
+          <span className="text-primary mt-1">✓</span>
+          <span>{text}</span>
+        </p>
+      ))}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
         {/* CTA Section */}
         <section className="mb-12">
           <div className="text-center p-8 rounded-lg bg-primary text-primary-foreground">
             <h2 className="mb-4">Обирай серцем</h2>
             <p className="mb-6">
-              Якщо відгукується - напиши мені.<br />
+              Якщо відгукується - напишіть мені.<br />
               Разом підберемо формат, який підтримає саме вас.
             </p>
             <a 
