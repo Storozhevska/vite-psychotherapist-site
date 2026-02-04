@@ -376,10 +376,9 @@ export default function App() {
 
             <div className="p-4 rounded-lg bg-background/50 border border-border/50 mb-6">
               <p className="mb-2">
-                <strong>1 ступінь:</strong> очно в Чернівцях
-              </p>
-              <p className="mb-2">
-                <strong>2 ступінь:</strong> онлайн (2 набори квітень 2026)
+                <strong>1 ступінь:</strong>  очно в Чернівцях та онлайн - 2 набори квітень 2026
+
+
               </p>
               <p className="text-muted-foreground">
                 Вартість: <strong>125€</strong> за семінар
@@ -419,7 +418,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',  // ← нормальна вага (medium), без жирності
           lineHeight: '1.1',
@@ -441,7 +440,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',
           lineHeight: '1.1',
@@ -462,7 +461,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',
           lineHeight: '1.1',
@@ -484,7 +483,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',
           lineHeight: '1.1',
@@ -506,7 +505,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',
           lineHeight: '1.1',
@@ -530,7 +529,7 @@ export default function App() {
     <div className="mb-12 md:mb-16">
       <h3
         style={{
-          fontSize: '2rem',
+          fontSize: '1.5rem',
           '@media (min-width: 768px)': { fontSize: '2.5rem' },
           fontWeight: '500',
           lineHeight: '1.1',
