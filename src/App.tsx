@@ -264,7 +264,12 @@ export default function App() {
         {/* Constellations Section */}
         <section className="mb-20">
           <div className="p-8 rounded-lg border border-border bg-card">
-            <h2 className="mb-6">Розстановки</h2>
+            <h2
+  className="mb-6"
+  style={{ fontSize: "1.75rem", fontWeight: 600 }}
+>
+  Розстановки
+</h2>
             <p className="text-muted-foreground"> 350 євро до 2х годин</p>
             <div className="space-y-4 text-foreground/80 mb-6">
               <p>
@@ -371,10 +376,10 @@ export default function App() {
 
             <div className="p-4 rounded-lg bg-background/50 border border-border/50 mb-6">
               <p className="mb-2">
-                <strong>1 ступінь:</strong> очно в Чернівцях або онлайн
+                <strong>1 ступінь:</strong> очно в Чернівцях
               </p>
               <p className="mb-2">
-                <strong>2 ступінь:</strong> онлайн (набір осінь 2025)
+                <strong>2 ступінь:</strong> онлайн (2 набори квітень 2026)
               </p>
               <p className="text-muted-foreground">
                 Вартість: <strong>125€</strong> за семінар
@@ -387,7 +392,7 @@ export default function App() {
 
             <div className="flex justify-center">
               <a 
-                href="https://t.me/yuliyastor" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdv5eG16YmyBCVGcajZi6tytP0ZtefCkdJexUP0qhtCWct14g/viewform" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
@@ -400,55 +405,148 @@ export default function App() {
         </section>
 
 
-{/* -------------------- Блок 1: Таблиця -------------------- */}
 <section className="mb-20 flex justify-center">
-  <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
+  <div className="p-8 rounded-xl border border-border/50 bg-gradient-to-br from-primary/5 via-background/50 to-primary/5 max-w-3xl w-full shadow-sm">
 
-
- <h2
-      className="mb-6 text-center font-bold"
-      style={{ color: "#111827", fontSize: "1.75rem" }}
+    <h2
+      className="mb-10 text-center font-bold tracking-tight text-foreground"
+      style={{ fontSize: "2.25rem" }}
     >
       З якими запитами я працюю
     </h2>
 
-    <table className="w-full border-collapse text-left">
-      <tbody className="divide-y divide-border/60">
-        {[
-          ["Емоційний стан","Тривожність, депресивні стани, внутрішня порожнеча, втрата енергії"],
-          ["Психосоматика","Психосоматичні симптоми, тілесна напруга, зв'язок емоцій і тіла"],
-          ["Травматичний досвід","Травми, насилля, кПТСР, складне дитинство"],
-          ["Панічні та тривожні розлади","Панічні атаки, страхи, фобії"],
-          ["Самооцінка і внутрішня сила","Прийняття власної сили, здорової агресії, кордонів"],
-          ["Стосунки","Партнерські конфлікти, залежні стосунки, вихід із токсичних стосунків"],
-          ["Самостійність у стосунках","Як бути близькою і залишатися собою"],
-          ["Дитячо-батьківські теми","Старі сценарії, вплив батьківської родини"],
-          ["Самотність","Відчуття покинутості, ізоляції, труднощі близькості"],
-          ["Сором і провина","Токсична провина, самосаботаж, самопошкодження"],
-          ["Харчова поведінка","Переїдання, емоційне харчування (без роботи з анорексією/булімією)"],
-          ["Сексуальність","Прийняття своєї сексуальності, важливості, права на бажання"],
-          ["Життєві кризи","Розлучення, втрати, зміни в родині"],
-          ["Нові сценарії життя","Побудова інших, здоровіших стосунків"],
-          ["Робота зі страхами","Сміливість при збереженні гнучкості"],
-          ["Тіло і психіка","Відчуття тіла, поєднання розуму і тілесності"],
-          ["Репродуктивні теми","Бажання завагітніти, емоційні блоки"],
-          ["Робота зі снами","Сни як доступ до глибинних процесів"],
-        ].map(([title, text], i) => (
-          <tr key={i}>
-            <td className="py-3 pr-6 font-medium text-foreground align-top">
-              <div className="flex items-start gap-2">
-                <span className="text-primary mt-1">✓</span>
-                <span>{title}</span>
-              </div>
-            </td>
+    {/* Група 1 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',  // ← нормальна вага (medium), без жирності
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Емоційні та психічні стани
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Емоційний стан:</strong> Тривожність, депресивні стани, внутрішня порожнеча, втрата енергії</p>
+        <p><strong className="text-foreground">Панічні та тривожні розлади:</strong> Панічні атаки, страхи, фобії</p>
+        <p><strong className="text-foreground">Робота зі страхами:</strong> Сміливість при збереженні гнучкості</p>
+      </div>
+    </div>
 
-            <td className="py-3 text-foreground/80 leading-loose">
-              {text}
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    {/* Група 2 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Травма та минулий досвід
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Травматичний досвід:</strong> Травми, насилля, кПТСР, складне дитинство</p>
+        <p><strong className="text-foreground">Дитячо-батьківські теми:</strong> Старі сценарії, вплив батьківської родини</p>
+      </div>
+    </div>
+
+    {/* Група 3 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Самооцінка та внутрішні конфлікти
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Самооцінка і внутрішня сила:</strong> Прийняття власної сили, здорової агресії, кордонів</p>
+        <p><strong className="text-foreground">Сором і провина:</strong> Токсична провина, самосаботаж, самопошкодження</p>
+        <p><strong className="text-foreground">Самотність:</strong> Відчуття покинутості, ізоляції, труднощі близькості</p>
+      </div>
+    </div>
+
+    {/* Група 4 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Стосунки
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Стосунки:</strong> Партнерські конфлікти, залежні стосунки, вихід із токсичних стосунків</p>
+        <p><strong className="text-foreground">Самостійність у стосунках:</strong> Як бути близькою і залишатися собою</p>
+        <p><strong className="text-foreground">Нові сценарії життя:</strong> Побудова інших, здоровіших стосунків</p>
+      </div>
+    </div>
+
+    {/* Група 5 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Тілесні та психосоматичні аспекти
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Психосоматика:</strong> Психосоматичні симптоми, тілесна напруга, зв'язок емоцій і тіла</p>
+        <p><strong className="text-foreground">Тіло і психіка:</strong> Відчуття тіла, поєднання розуму і тілесності</p>
+        <p><strong className="text-foreground">Харчова поведінка:</strong> Переїдання, емоційне харчування (без роботи з анорексією/булімією)</p>
+        <p><strong className="text-foreground">Сексуальність:</strong> Прийняття своєї сексуальності, важливості, права на бажання</p>
+        <p><strong className="text-foreground">Репродуктивні теми:</strong> Бажання завагітніти, емоційні блоки</p>
+      </div>
+    </div>
+
+    {/* Група 6 */}
+    <div className="mb-12 md:mb-16">
+      <h3
+        style={{
+          fontSize: '2rem',
+          '@media (min-width: 768px)': { fontSize: '2.5rem' },
+          fontWeight: '500',
+          lineHeight: '1.1',
+          letterSpacing: '-0.025em',
+          marginBottom: '1.5rem',
+          color: '#030213'
+        }}
+      >
+        Життєві кризи та глибина
+      </h3>
+      <div className="space-y-8 pl-4 text-xl md:text-2xl">
+        <p><strong className="text-foreground">Життєві кризи:</strong> Розлучення, втрати, зміни в родині</p>
+        <p><strong className="text-foreground">Робота зі снами:</strong> Сни як доступ до глибинних процесів</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -456,15 +554,14 @@ export default function App() {
 <section className="mb-20 flex justify-center">
   <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
 
-
- <h2
+    <h2
       className="mb-6 text-center font-bold"
       style={{ color: "#111827", fontSize: "1.75rem" }}
     >
       Моя терапія для тих, хто…
     </h2>
 
-    <ul className="space-y-4 list-disc pl-6">
+    <div className="space-y-4 text-foreground/90 leading-loose">
       {[
         "шукає глибину, а не лише швидкі поради",
         "хоче розвитку, а не просто полегшення симптомів",
@@ -476,9 +573,12 @@ export default function App() {
         "хоче поєднати духовність, психіку і тіло",
         "готовий до чесного контакту із собою",
       ].map((item, i) => (
-        <li key={i} className="leading-loose">{item}</li>
+        <p key={i} className="flex items-start gap-2">
+          <span className="text-primary mt-1">✓</span>
+          <span>{item}</span>
+        </p>
       ))}
-    </ul>
+    </div>
   </div>
 </section>
 

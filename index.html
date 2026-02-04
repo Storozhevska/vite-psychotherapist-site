@@ -1,15 +1,83 @@
-
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Сайт візітка психотерапевта</title>
-    </head>
-
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
+  <!-- Головний title – до 60 символів, з ключовими словами на початку -->
+  <title>Юлія Сторожевська — Гештальт-терапевт, Психотерапевт | Чернівці та онлайн</title>
+  
+  <!-- Meta description – 150–160 символів, з закликом до дії -->
+  <meta name="description" content="Гештальт-терапія, сімейні консультації, розстановки, супервізія. Допомагаю з тривогою, депресією, травмами, стосунками, психосоматикою. Онлайн та очно в Чернівцях. Запис у Telegram @yuliyastor">
+  
+  <!-- Ключові слова (допомагають деяким інструментам, хоча Google їх ігнорує) -->
+  <meta name="keywords" content="психотерапевт Чернівці, гештальт терапія, сімейна терапія Чернівці, розстановки, супервізія гештальт, психотерапія онлайн, терапія тривоги, депресія, травма, психотерапевт онлайн Україна">
+  
+  <!-- Дозволяємо індексацію -->
+  <meta name="robots" content="index, follow" />
+  
+  <!-- Open Graph – для гарного вигляду в Telegram, Facebook, Viber тощо -->
+  <meta property="og:title" content="Юлія Сторожевська — Психотерапевт, Гештальт-терапевт, Супервізор" />
+  <meta property="og:description" content="Індивідуальна та сімейна терапія, розстановки по Хеллінгеру, супервізія. Допомагаю знайти внутрішню опору, гармонію в стосунках та тілі." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://storozhevska.netlify.app/" />
+  <meta property="og:image" content="https://storozhevska.netlify.app/images/yuliya.jpg" /> <!-- ← додай своє фото сюди пізніше -->
+  <meta property="og:locale" content="uk_UA" />
+  
+  <!-- Twitter/X Cards (опціонально) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Favicon – додай іконку 32x32 або 180x180 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  
+  <!-- Якщо є CSS-файл (рекомендую додати базовий стиль) -->
+  <!-- <link rel="stylesheet" href="/styles.css"> -->
+  
+  <!-- Schema.org – Person + LocalBusiness (дуже важливо для локального пошуку) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Юлія Сторожевська",
+    "jobTitle": "Гештальт-терапевт, Супервізор, Психотерапевт",
+    "description": "Дипломований психолог, сертифікований гештальт-терапевт (MIGIS, EAGT), спеціаліст з сімейної терапії, розстановок, тілесно-орієнтованої терапії.",
+    "url": "https://storozhevska.netlify.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Чернівці",
+      "addressCountry": "UA"
+    },
+    "sameAs": [
+      "https://t.me/yuliyastor"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Юлія Сторожевська — Психотерапія",
+    "description": "Гештальт-терапія, сімейні консультації, розстановки, супервізія в Чернівцях та онлайн",
+    "url": "https://storozhevska.netlify.app/",
+    "telephone": "@yuliyastor (Telegram)",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Чернівці",
+      "addressCountry": "UA"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "20:00"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
