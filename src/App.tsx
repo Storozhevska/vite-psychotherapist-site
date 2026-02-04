@@ -403,9 +403,7 @@ export default function App() {
 {/* -------------------- Блок 1: Таблиця -------------------- */}
 <section className="mb-20 flex justify-center">
   <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
-{/* <h2 className="mb-6 text-center text-2xl font-semibold text-foreground">
-  З якими запитами я працюю
-</h2> */}
+
 
  <h2
       className="mb-6 text-center font-bold"
@@ -457,12 +455,7 @@ export default function App() {
 {/* -------------------- Блок 2: Моя терапія -------------------- */}
 <section className="mb-20 flex justify-center">
   <div className="p-8 rounded-lg border border-border bg-gradient-to-br from-primary/5 to-primary/10 max-w-3xl w-full">
- {/* <h2
-  className="mb-6 font-semibold text-left"
-  style={{ fontSize: "1.6rem", color: "#111827" }}
->
-  Моя терапія для тих, хто…
-</h2> */}
+
 
  <h2
       className="mb-6 text-center font-bold"
