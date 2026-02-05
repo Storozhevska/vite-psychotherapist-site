@@ -80,7 +80,7 @@ export default function App() {
                 </p>
 
                   <p>
-                  12+ років досвіду у терапії
+                  12+ років досвіду у терапії, є власна терапія, супервізія, гіпервізія.
                 </p>
 
                 <p className="text-muted-foreground italic">
