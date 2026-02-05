@@ -74,14 +74,18 @@ export default function App() {
               <h1 className="mb-4">ЮЛІЯ СТОРОЖЕВСЬКА</h1>
               <div className="space-y-4 text-foreground/80">
                 <p>
-                  Дипломований Психолог, Сертифікований гештальт-терапевт, Сертифікований супервізор, рекомендований тренер інституту MIGIS (акредитований в EAGT), тілесно-орієнтований, системно-сімейний терапевт, спеціаліст по роботі із залежностями, арт-терапії, дитяче-батьківських відносин.
-                </p>
+Дипломований Психолог, рекомендований гештальт-терапевт інституту МІГІС, акредитований супервізор, тренер інституту MIGIS (Міжрегіональний Інститут Гештальт Терапії та Мистецтва - акредитований член EAGT європейська асоціація гештальт-терапії), тілесно-орієнтований, системно-сімейний терапевт, спеціаліст по роботі із залежностями, арт-терапії, дитяче-батьківських відносин.                </p>
                 <p className="text-muted-foreground italic">
                   Щедра, тепла, безпечна, професійна, глибока, щира, жива
                 </p>
 
                   <p>
                   12+ років досвіду у терапії
+                </p>
+
+                <p className="text-muted-foreground italic">
+                Визнаю і працюю по Етичному Кодексу MIGIS, EAGT, УСП, GPTIM, 
+Етичного кодексу психолога України, ухваленого на І Установчому з’їзді Товариства психологів України 20 грудня 1990 року
                 </p>
               </div>
             </div>
@@ -408,11 +412,14 @@ export default function App() {
   <div className="p-8 rounded-xl border border-border/50 bg-gradient-to-br from-primary/5 via-background/50 to-primary/5 max-w-3xl w-full shadow-sm">
 
     <h2
-      className="mb-10 text-center font-bold tracking-tight text-foreground"
-      style={{ fontSize: "2.25rem" }}
-    >
-      З якими запитами я працюю
-    </h2>
+  className="mb-10 text-center font-bold tracking-tight text-foreground"
+  style={{
+    fontSize: "2.25rem",
+    lineHeight: "1.15"
+  }}
+>
+  З якими запитами я працюю
+</h2>
 
     {/* Група 1 */}
     <div className="mb-12 md:mb-16">
