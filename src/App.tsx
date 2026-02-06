@@ -188,7 +188,7 @@ export default function App() {
             <div className="p-6 rounded-lg border border-border bg-card">
               <div className="mb-2">
                 <h3 className="mb-2">Індивідуальна терапія (жінки, чоловіки)</h3>
-                <p className="text-muted-foreground">70 євро сесія</p>
+                <p className="text-muted-foreground">70 євро сесія (3500 грн)</p>
               </div>
               <div className="space-y-2 text-foreground/70 mb-4">
                 <p>Перша сесія: 60 хвилин, наступні по 50 хвилин</p>
